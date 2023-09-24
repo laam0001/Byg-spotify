@@ -1,0 +1,33 @@
+---
+const {img, header, text} = Astro.props;
+---
+
+<article>
+
+    <div class="box">
+    <img src={img}>
+    <h2>{header}</h2>
+    <p>{text}</p>
+    </div>	
+
+</article>
+
+<style>
+    .box {
+        background-color: #181818;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+
+    .box:hover {
+        background-color: #282828;
+    }
+
+    .img {
+        border-radius: 10px;
+    }
+
+</style>

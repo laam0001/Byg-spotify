@@ -1,0 +1,68 @@
+---
+import "../css/style.css";
+import Logo from "../components/Logo.astro";
+import Bibliotek from "../components/Bibliotek.astro";
+import Create from "../components/Create.astro";
+import Cookies from "../components/Cookies.astro";
+import Hjem from "../components/Hjem.astro";
+import Footer from "../components/Footer.astro";
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+</head>
+<body>
+    <main>
+	<article class="grid_1-1">
+	<div class="box1">
+		<div class="baggrundsfarve">
+			<div>
+			<Logo />
+			<Hjem link="/" header="Hjem" img="../icons/home-filled.svg"/>
+			<Hjem link="/search" header="Søg" img="../icons/search-icon.svg" />
+			</div>
+		</div>
+
+		<div class="box3">
+			<div class="baggrundsfarve2">
+				<div>
+					<Hjem header="Mit bibliotek" img="../icons/library-icon-filled.svg"/>
+				</div>
+
+				<div>
+					<Create />
+				</div>
+			</div>
+
+				<div>
+				<Bibliotek header="Opret din første playliste" text="Det er nemt - vi skal nok hjælpe dig" btn="Opret playliste"/>
+				</div>
+				<div>
+					<Bibliotek header="Lad os finde nogle podcats, du kan følge" text="Vi holder dig orienteret om nye episoder" btn="Udforsk podcats" />
+				</div>
+
+				<div>
+				<Cookies />
+				</div>
+				
+			</div>
+		</div>
+	</div>
+    
+    
+	
+	<slot />
+
+    </div>
+	<Footer />
+	</main>
+
+</body>
+</html>
+                

@@ -1,0 +1,28 @@
+---
+const {link, img, header} = Astro.props
+
+---
+<div class="hjem">
+<a href={link}><img src={img}>{header}</a>
+</div>
+
+<style>
+    .hjem {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+</style>

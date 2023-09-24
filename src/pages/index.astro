@@ -1,0 +1,42 @@
+---
+import "../css/style.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import MusicCard from "../components/MusicCard.astro";
+import Shelf from "../components/Shelf.astro";
+
+---
+<MainLayout>
+	<div class="box2">
+		<Header />
+
+		<div class="baggrundsfarve">
+			<div>
+				<Shelf header="Spotify-playlister" />
+				<div class="grid_1-1-1-1-1">
+					<MusicCard img="https://picsum.photos/id/76/150/150" header="Today´s Top Hits" text="Jung Kook is on top of the Hottest 50!"/>
+					<MusicCard img="https://picsum.photos/id/65/150/150" header="RapCaviar" text="New music from Drake, Rod Wave and Doja Cat." />
+					<MusicCard img="https://picsum.photos/id/68/150/150" header="All Out 2010s" text="The biggest songs of the 2010s." />
+					<MusicCard img="https://picsum.photos/id/240/150/150" header="Rock Classics" text="Rock legends & epic songs that continue to..."/>
+					<MusicCard img="https://picsum.photos/id/331/150/150" header="Chill Hits" text="Kick back to the best new and recent chill hits."/>
+				</div>
+
+			<div>
+				<Shelf header="Fokus" />
+				<div class="grid_1-1-1-1-1">
+					<MusicCard img="https://picsum.photos/id/325/150/150" header="Peaceful Piano" text="Peaceful piano to help you slow down, breathe..."/>
+					<MusicCard img="https://picsum.photos/id/334/150/150" header="Deep Focus" text="Keep calm and focus with ambient and post-rock..." />
+					<MusicCard img="https://picsum.photos/id/338/150/150" header="Instrumental Study" text="Focus with soft study music in the background." />
+					<MusicCard img="https://picsum.photos/id/349/150/150" header="Focus Flow" text="Uptempo instrumental hip hop beats."/>
+					<MusicCard img="https://picsum.photos/id/364/150/150" header="Beats to think to" text="Focus with melodic techno and tech house."/>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</article>
+	
+
+</MainLayout>
+	
+	

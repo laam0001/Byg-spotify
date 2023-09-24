@@ -1,0 +1,31 @@
+---
+const {header} = Astro.props 
+---
+
+<div class="hylde">
+<h1>{header}</h1>
+<a href="/#">Vis alle</a>
+</div>
+
+<style>
+    .hylde{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 55px;
+    }
+
+    h1{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+      
+    a {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        text-decoration: none;
+        color: #808080;
+        margin-top: 30px;
+    }
+
+</style>

@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+h1,
+h2 {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  color: #808080;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  color: #808080;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.btn:hover {
+  background-color: #e6e3e3;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.box1,
+.box2 {
+  padding: 5px;
+  padding-top: 2px;
+  margin-bottom: 80px;
+}
+
+.box3 {
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #121212;
+}
+
+.grid_1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.baggrundsfarve,
+.baggrundsfarve2 {
+  background-color: #121212;
+}
+
+.baggrundsfarve2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+}

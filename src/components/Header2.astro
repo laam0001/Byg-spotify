@@ -1,0 +1,121 @@
+---
+
+---
+
+<header>
+    <a href="/"> <div class="rund">
+    <img src="../icons/back-btn.svg" alt="back">
+    </div></a>
+
+    <a href="/search"><div class="rund">
+   <img src="../icons/forward-btn.svg" alt="forward">
+    </div></a>
+
+    <div class="search">
+    <img src="../icons/search-icon.svg">
+    <input type="text" placeholder="Search..">
+    </div>
+
+    <div class="tilmeld">
+    <a href="/#">Tilmeld dig</a>
+    </div>
+
+    <div class="btn">
+    <a href="/#">Log på</a> 
+    </div>
+    </div>
+    
+</header>
+
+<style>
+    header {
+        background-color: #181818;
+        padding: 5px;
+        display: flex; 
+        position: fixed;
+        top: 0;
+        padding-right: 20px;
+    }
+
+    .rund {
+        background-color: #282626;
+        border-radius: 50px;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        aspect-ratio: 1;
+        margin: 5px;
+    }
+
+    .rund:hover{
+        background-color: #393939;
+    }
+
+    img {
+        display: flex;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .search {
+        display: flex;  
+    }
+
+    .search img {
+        display: flex;
+        position: absolute;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+
+    .search input[type=text] {
+        background-color: #302e2e;
+        padding-left: 40px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 30px;
+        font-size: 17px;
+        color: #808080;
+    }
+
+    .search input[type=text]:hover {
+        background-color: #393939;
+    }
+
+    .tilmeld a {
+        display: flex;
+        align-items: self-end;
+        margin: 20px;
+        padding-left: 320px;
+        color: #808080;
+    }
+
+    .tilmeld a:hover {
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn {
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 15px;
+        margin: 5px;
+        margin-left: 10px;
+
+         }
+
+    .btn a {
+        color: black;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn:hover {
+        background-color: #e6e3e3;
+    }
+</style>
